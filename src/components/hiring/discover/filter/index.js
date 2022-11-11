@@ -194,7 +194,7 @@ const Filter = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography>
-                        {item.option &&
+                        {item.option ||
                           item.option.map((ele) => (
                             <div className={classes.titleDiv}>
                               {handleAccordionType(item, ele)}
